@@ -25,10 +25,13 @@ formMessage.addEventListener('submit', (e) => {
   inputMessage.value = '';
 });
 
+const liClassName = 'list-group-item';
+
 const createMessage = (message) => {
   const messagesUl = document.querySelector('#messages');
   const li = document.createElement('li');
   li.setAttribute(datatestID, 'message');
+  li.setAttribute('class', liClassName);
   li.innerText = message;
   messagesUl.appendChild(li);
 };
@@ -38,6 +41,7 @@ const createUserNickname = (nickname) => {
   const li = document.createElement('li');
   li.setAttribute(datatestID, onlineUser);
   li.setAttribute('id', onlineUser);
+  li.setAttribute('class', `${liClassName} list-group-item list-group-item-info`);
   li.innerText = nickname;
   NICK = nickname;
   userNameList.appendChild(li);
@@ -48,6 +52,7 @@ const appendNewUser = (nickname, id) => {
   const li = document.createElement('li');
   li.setAttribute('id', id);
   li.setAttribute(datatestID, onlineUser);
+  li.setAttribute('class', liClassName);
   li.innerText = nickname;
   onlineUsersList.appendChild(li);
 };

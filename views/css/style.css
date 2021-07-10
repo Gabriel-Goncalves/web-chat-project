@@ -1,0 +1,45 @@
+body {
+  /* background-color: aqua; */
+  padding: 15px;
+}
+
+.section-flex {
+  display: flex;
+}
+
+.section-users-info {
+  padding: 25px;
+  min-height: 80vh;
+  margin-bottom: 20px;
+  border: black 1px solid;
+  width: 40%;
+}
+
+.section-messages {
+  border: black 1px solid;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  min-height: 80vh;
+  width: 60%;
+}
+
+.message-box {
+  width: 80%;
+}
+
+.div-input-message {
+  width: 90%;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.div-input-nick {
+  width: 78%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+
+.messages {
+  margin-top: 20px;
+}

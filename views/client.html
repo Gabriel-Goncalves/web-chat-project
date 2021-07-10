@@ -4,33 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebChat</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <main>
       <section class="section-all">
         <section class="section-flex">
-          <section class="section-users-info">
+          <section class="section-users-info card">
             <section class="section-nick">
               <form action="" id="form-nickname">
-                <input type="text" placeholder="Insira seu nickname" id="nickname" data-testid="nickname-box"/>
-                <button type="submit" data-testid="nickname-button">Salvar</button>
+                <div class="div-input-nick">
+                  <input
+                  type="text"
+                  placeholder="Insira seu nickname"
+                  id="nickname"
+                  data-testid="nickname-box"
+                  class="form-control"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  data-testid="nickname-button"
+                  class="btn btn-primary"
+                >
+                  Salvar
+                </button>
               </form>
             </section>
             <section class="section-onlines">
-              <ul id="localUser"></ul>
-              <ul id="onlineUsers">
-              </ul>
+              <h4 class="card-header">Online Users</h4>
+              <ul id="localUser" class="list-group"></ul>
+              <ul id="onlineUsers" class="list-group"></ul>
             </section>
           </section>
-          <section class="section-messages">
-            <ul id="messages"></ul>
+          <section class="section-messages card">
+            <h4 class="card-header">Mensagens</h4>
+            <ul id="messages" class="messages list-group"></ul>
           </section>
         </section>
         <section class="section-send">
           <form action="" id="message-form">
-            <input type="text" placeholder="Digite uma nova mensagem aqui" id="mensagem" data-testid="message-box"/>
-            <button type="submit" data-testid="send-button">Enviar</button>
+            <div class="div-input-message">
+              <input
+                type="text"
+                placeholder="Digite uma nova mensagem aqui"
+                id="mensagem"
+                data-testid="message-box"
+                class="message-box form-control"
+              />
+            </div>
+            <button
+              type="submit"
+              data-testid="send-button"
+              class="btn btn-success"
+            >
+              Enviar
+            </button>
           </form>
         </section>
       </section>
